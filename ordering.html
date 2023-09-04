@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+<body>
+     <!-- Фиксированная шапка -->
+     <header class="header">
+        <div class="container">
+        <div class="header__menu">
+                <div class="wrapper__header">
+                    <div class="logo">
+                        <img src="assets/img/header_logo.svg" alt="WOMAZING">
+                    </div>
+                   <!-- Меню -->
+                   <nav class="burger">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="about.html">О бренде</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                   </nav>
+                  
+                   <div class="tel__logo">
+                      <button id="open-modal-btn">+7 (495) 823-54-12</button>
+                    </div>
+                    <!-- Модальное окно -->
+                    <div class="modal" id="my-modal">
+                        <div class="modal__box">
+                            <form class="modal__form js-form" action="assets/php/mail.php" method="get" id="popupResult">
+                                <h2 class="modal__title">Заказать обратный звонок</h2>
+                                <div class="form__field">
+                                    <input class="form-control form__type" type="text" name="name" required placeholder="Имя">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control form__type" type="email" name="email" required placeholder="E-mail">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control form__type" type="number" name="phone" required placeholder="Телефон">
+                                </div>
+                                <button type="submit" class="close__my__modal__btn btn select-btn" data-submit>Заказать звонок</button>
+                            </form>
+                        </div>
+                        <div class="overlay" id="close-my-modal-btn"></div>
+                    </div>
+                   
+                    <!-- Конец модального окна -->
+                    <div class="cart">
+                        <a href="cart.html"><img src="assets/img/basket.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header__hamburger">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="about.html">О бренде</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+            
+    </header>
+    <header class="header">
+
+        <div class="container">
+            <div class="crumbs">
+                <h1>
+                    Оформление заказа
+                </h1>
+                <div class="contact__info__end">
+                    <a href="index.html">Главная</a>
+                    <span>—</span>
+                    <p>Оформление заказа</p>
+                </div>  
+            </div>
+        </div>
+    </header>
+      <section class="section">
+        <div class="container">
+            <div class="form__ordering__info">
+                <form action="#" class="ordering">
+                    <h2 class="mbot">Данные покупателя</h2>
+                    <div class="form__ordering">
+                        <input type="name" class="ordering__name" placeholder="Имя">
+                    </div>
+                    <div class="form__ordering">
+                        <input type="email" class="ordering__email" placeholder="E-mail">
+                    </div>
+                    <div class="form__ordering">
+                        <input type="number" class="ordering__number" placeholder="Телефон">
+                    </div>
+                    <h2 class="mtop">Адрес получателя</h2>
+    
+                    <div class="form__ordering">
+                        <input type="text" class="ordering__side" placeholder="Имя">
+                    </div>
+                    <div class="form__ordering">
+                        <input type="text" class="ordering__city" placeholder="E-mail">
+                    </div>
+                    <div class="form__ordering">
+                        <input type="text" class="ordering__street" placeholder="Телефон">
+                    </div>
+                    <div class="form__ordering">
+                        <input type="text" class="ordering__house" placeholder="E-mail">
+                    </div>
+                    <div class="form__ordering">
+                        <input type="text" class="ordering__apartment" placeholder="Телефон">
+                    </div>
+                    <h2 class="mtop">
+                        Комментарии
+                    </h2>
+                    <div class="form__ordering">
+                        <textarea class="form__textarea" name="text" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    </div> 
+                </form>
+                <div class="form__ordering__order">
+                    <h2>
+                        Ваш заказ
+                    </h2>
+                    <div class="form__ordering__info__text">
+                        <span>Товар</span>
+                        <span>Всего</span>
+                    </div>
+                    <div class="form__ordering__info__text">
+                        <span>Футболка USA</span>
+                        <span>$129</span>
+                    </div>
+                    <div class="form__ordering__info__text">
+                        <span>Подытог</span>
+                        <span>$129</span>
+                    </div>
+                    <div class="form__ordering__total">
+                        <span>Итого</span>
+                        <span>$129</span>
+                    </div>
+                        <div class="form__ordering__payment">
+                            <h2>Способы оплаты</h2>
+                            <div class="form__ordering__payment__wrapper">
+                                <input type="checkbox"> <span>Оплата наличными</span>
+                            </div>
+                          <div class="form__ordering__payment__btn">
+                            <input type="submit" class="form__ordering__payment__button" value="Разместить заказ">
+                          </div>
+                        </div>
+                </div>
+               
+            </div>
+            
+        </div>
+      </section>
+        
+
+            <!-- Начало подвала -->
+            <footer>
+                <div class="container">
+                    <div class="basement">
+                        <div class="basement__content">
+                            <div class="basement__img">
+                                <img src="assets/img/header_logo.svg" alt="">
+                            </div>
+                            <p>
+                                © Все права защищены
+                                Политика конфиденциальности
+                                Публичная оферта
+                            </p>
+                        </div>
+                        <div class="basement__menu">
+                            <div class="basement__menu__list">
+                                <ul>
+                                    <li>
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Магазин</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">О бренде</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="basement__menu__category">
+                                <ul>
+                                    <li>
+                                        <a href="#">Пальто</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Свитшоты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кардиганы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Толстовки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Картинки социальных сетей -->
+                        <div class="basement__menu__link">
+                            <div class="basement__menu__link__a">   
+                                <a href="tel:+38 (044) 823-54-12">+38 (044) 823-54-12</a>
+                                <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                            </div>
+                            <div class="basement__menu__link__social">
+                                <div class="basement__menu__link__social__img">
+                                    <img src="assets/img/instagram.png" alt="">
+                                </div>
+                                <div class="basement__menu__link__social__img">
+                                    <img src="assets/img/facebook.png" alt="">
+                                </div>
+                                <div class="basement__menu__link__social__img">
+                                    <img src="assets/img/twitter.png" alt="">
+                                </div>
+                                <div class="basement__menu__link__social__visa">
+                                    <img src="assets/img/visa-mastercard.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Конец картинки социальных сетей -->
+                    </div>
+                </div>
+            </footer>
+        <!-- Конец подвала -->
+
+</body>
+</html>

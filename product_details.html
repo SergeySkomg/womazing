@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+<body>
+     <!-- Фиксированная шапка -->
+     <header class="header">
+        <div class="container">
+        <div class="header__menu">
+                <div class="wrapper__header">
+                    <div class="logo">
+                        <img src="assets/img/header_logo.svg" alt="WOMAZING">
+                    </div>
+                   <!-- Меню -->
+                   <nav class="burger">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="about.html">О бренде</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                   </nav>
+                  
+                   <div class="tel__logo">
+                      <button id="open-modal-btn">+7 (495) 823-54-12</button>
+                    </div>
+                    <!-- Модальное окно -->
+                    <div class="modal" id="my-modal">
+                        <div class="modal__box">
+                            <form class="modal__form js-form" action="assets/php/mail.php" method="get" id="popupResult">
+                                <h2 class="modal__title">Заказать обратный звонок</h2>
+                                <div class="form__field">
+                                    <input class="form-control form__type" type="text" name="name" required placeholder="Имя">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control form__type" type="email" name="email" required placeholder="E-mail">
+                                </div>
+                                <div class="form__field">
+                                    <input class="form-control form__type" type="number" name="phone" required placeholder="Телефон">
+                                </div>
+                                <button type="submit" class="close__my__modal__btn btn select-btn" data-submit>Заказать звонок</button>
+                            </form>
+                        </div>
+                        <div class="overlay" id="close-my-modal-btn"></div>
+                    </div>
+                   
+                    <!-- Конец модального окна -->
+                    <div class="cart">
+                        <a href="cart.html"><img src="assets/img/basket.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header__hamburger">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="about.html">О бренде</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+            
+    </header>
+    <section class="header">
+
+        <div class="container">
+            <div class="crumbs">
+                <h1>
+                    Свитшот Sweet Shot
+                </h1>
+                <div class="crumbs__info">
+                    <a href="index.html">Главная</a>
+                    <span>—</span>
+                    <a href="#">Свитшоты</a>
+                    <span>—</span>
+                    <span>Свитшот Sweet Shot</span>
+                </div>  
+            </div>
+        </div>
+    </section>
+      <section class="section">
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator__img">
+                    <img src="assets/img/shop/product2.png" alt="">
+                </div>
+                <div class="calculator__settings">
+                    <div class="calculator__settings__price">
+                        <span>$311</span>
+                        <del>$450</del>
+                    </div>
+                    <div class="calculator__settings__size">
+                        <p>
+                            Выберите размер
+                        </p>
+                        <div class="calculator__settings__size__btn">
+                            <span class="active">S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XL</span>
+                        </div>
+                    </div>
+                    <div class="calculator__settings__color">
+                        <p>
+                            Выберите цвет
+                        </p>
+                        <div class="calculator__settings__color__btn">
+                            <div class="chocolate"></div>
+                            <div class="gray"></div>
+                            <div class="pink"></div>
+                            <div class="yellow"></div>
+                        </div>
+                    </div>
+                    <div class="calculator__settings__wrapper">
+                        <div class="calculator__settings__wrapper__btn">
+                            <input type="number">
+                        </div>
+                        <a href="#">Добавить в корзину</a>
+                    </div>
+                </div>
+            </div>
+            <div class="related__goods">
+                <h2>Связанные товары</h2>
+                <div class="related__goods__product">
+                    <a href="product_details.html">
+                        <div class="collection__img">
+                                <img src="assets/img/collection/collection1.png" alt="">
+                        </div>
+                        <h3>Футболка USA</h3>
+                        <div class="price">
+                            <span>$129</span>
+                        </div>
+                    </a>
+                    <a href="product_details.html">
+                        <div class="collection__img">
+                                <img src="assets/img/collection/collection2.png" alt="">
+                        </div>
+                        <h3>Купальник Glow</h3>
+                        <div class="price">
+                            <del>   </del>
+                            <span>$129</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+        
+
+            <!-- Начало подвала -->
+            <footer>
+                <div class="container">
+                    <div class="basement">
+                        <div class="basement__content">
+                            <div class="basement__img">
+                                <img src="assets/img/header_logo.svg" alt="">
+                            </div>
+                            <p>
+                                © Все права защищены
+                                Политика конфиденциальности
+                                Публичная оферта
+                            </p>
+                        </div>
+                        <div class="basement__menu">
+                            <div class="basement__menu__list">
+                                <ul>
+                                    <li>
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Магазин</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">О бренде</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="basement__menu__category">
+                                <ul>
+                                    <li>
+                                        <a href="#">Пальто</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Свитшоты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кардиганы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Толстовки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Картинки социальных сетей -->
+                        <div class="basement__menu__link">
+                            <div class="basement__menu__link__a">   
+                                <a href="tel:+38 (044) 823-54-12">+38 (044) 823-54-12</a>
+                                <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                            </div>
+                            <div class="basement__menu__link__social">
+                                <div class="basement__menu__link__social__img">
+                                    <img src="assets/img/instagram.png" alt="">
+                                </div>
+                                <div class="basement__menu__link__social__img">
+                                    <img src="assets/img/facebook.png" alt="">
+                                </div>
+                                <div class="basement__menu__link__social__img">
+                                    <img src="assets/img/twitter.png" alt="">
+                                </div>
+                                <div class="basement__menu__link__social__visa">
+                                    <img src="assets/img/visa-mastercard.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Конец картинки социальных сетей -->
+                    </div>
+                </div>
+            </footer>
+        <!-- Конец подвала -->
+
+</body>
+</html>
